@@ -1,0 +1,413 @@
+/* FONTS */
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/roboto-v30-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-cyrillic-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-cyrillic-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-cyrillic-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-cyrillic-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-cyrillic-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-cyrillic-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-cyrillic-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-900 - cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v30-cyrillic-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v30-cyrillic-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v30-cyrillic-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v30-cyrillic-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v30-cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* GENERAL STYLES START */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1d1d1d;
+  line-height: 1.2;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* GENERAL STYLES END */
+
+/*HEADER STYLES START*/
+.header {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  background: #fff;
+  z-index: 10;
+}
+.wrapper {
+  max-width: 962px;
+  margin: 0 auto;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 16px;
+}
+.nav__singin {
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.nav__button {
+  padding: 13px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.nav__button:hover,
+.nav__button:focus {
+  background-color: #e0e0e0;
+}
+.header__logo__pic {
+  width: 119.23px;
+}
+.header__backet {
+  padding: 0 10.5px;
+}
+.header__backet__pic {
+  width: 19px;
+}
+/* HEADER STYLES END */
+
+/*MAIN STYLES START*/
+.main {
+  padding-top: 104px;
+}
+.search__input {
+  padding-top: 30px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  color: rgba(98, 98, 98, 0.5);
+  outline: none;
+  margin-bottom: 56px;
+}
+.search__input::placeholder {
+  color: rgba(98, 98, 98, 0.5);
+}
+.restaurants__title {
+  font-size: 22px;
+  line-height: 34px;
+  font-family: "Roboto";
+  margin-bottom: 16px;
+  color: #1d1d1d;
+}
+.rest__card {
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+}
+.rest__card_pic {
+  margin-bottom: 16px;
+  max-width: 308px;
+}
+.rest__card_title {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.rest__card_title:hover,
+.rest__card_title:focus,
+.rest__card_title:active {
+  opacity: 0.6;
+}
+
+.rest__card_type_price {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+.rest__card_time {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+/* MAIN STYLES END */
+
+/* FOOTER STYLES START */
+.footer {
+  margin-top: 64px;
+  padding: 56px 0 40px;
+  background: #262626;
+}
+.footer__logo {
+  max-width: 190.77px;
+  margin-bottom: 40px;
+}
+.line {
+  position: relative;
+  margin-bottom: 32px;
+}
+.line::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer__lang {
+  margin-right: 97px;
+  position: relative;
+}
+.footer__lang_form {
+  background: #3b3b3b;
+  padding: 0 16px;
+  margin-bottom: 33px;
+}
+.language {
+  width: 100%;
+  background: transparent url(/img/world.svg) no-repeat left center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  border: 0;
+  padding: 12px 48px;
+}
+.uber__hashtag {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.hashtag {
+  color: #49a144;
+}
+.footer__uber {
+  color: #ffffff;
+}
+.social_networks {
+  margin-top: 17px;
+}
+.network {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.footer__col li {
+  margin-bottom: 23px;
+}
+.footer_link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.footer__download {
+  margin-top: 22px;
+}
+.download {
+  padding: 40px 0 8px;
+}
+.download_link1 {
+  text-align: right;
+}
+.download_link2 {
+  padding-left: 32px;
+  text-align: left;
+}
+.download_pic {
+  max-width: 120.66px;
+  height: 40px;
+}
+.footer__bottom {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+}
+.footer__agreement {
+  padding-top: 40px;
+}
+/* FOOTER STYLES END */
+
+/* MEDIA STYLES START */
+@media screen and (max-width: 992px) {
+  .footer {
+    margin-top: 32px;
+  }
+  .footer__lang {
+    margin-right: 72px;
+    margin-bottom: 32px;
+  }
+  .language {
+    padding: 12px 0 12px 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    max-width: 752px;
+  }
+  .rest__card_pic {
+    max-width: 368px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 560px;
+  }
+  .header__logo__pic {
+    width: 107px;
+  }
+  .footer {
+    padding: 56px 0 16px;
+  }
+  .line {
+    margin-bottom: 24px;
+  }
+  .add_margin {
+    margin-bottom: 32px;
+  }
+  .footer__download {
+    margin-top: 17px;
+  }
+  .download {
+    padding: 24px 0 0;
+  }
+  .footer__lang_form {
+    padding: 0 8px 0 16px;
+  }
+  .footer__agreement .footer__col {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 308px;
+  }
+  .download_pic {
+    max-width: 108.66px;
+    height: 36px;
+  }
+}
+/* MEDIA STYLES END */
