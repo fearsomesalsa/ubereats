@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushkin</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./pushkin_style.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <div class="header__logo">
+              <a href="#" class="header__logo__link">
+                <img
+                  src="../img/logo.svg"
+                  alt="logo"
+                  class="header__logo__pic"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__right">
+            <nav class="header__nav">
+              <div class="nav__item">
+                <a href="#" class="nav__singin">
+                  <button class="nav__button">Войти</button></a
+                >
+              </div>
+              <div class="header__backet">
+                <a href="#" class="header__backet__link">
+                  <img
+                    src="../img/basket.svg"
+                    alt="backet"
+                    class="header__backet__pic"
+                  />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <div class="pushkin__main">
+      <div class="top" id="anchor"></div>
+      <div class="wrapper">
+        <div class="pushkin__main_title">
+          <h1 class="pushkin__main_caption">Трактир «Пушкин»</h1>
+          <div class="row">
+            <div class="pushkin__main_price_wrap col-sm-6 col-xs-12">
+              <div class="pushkin__main_details pushkin__main_price">
+                ₽₽₽ • Европейская
+              </div>
+            </div>
+            <div class="pushkin__main_time_wrap col-sm-6 col-xs-12">
+              <div class="pushkin__main_details pushkin__main_time">
+                40 - 50 мин
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="menu">
+      <div class="wrapper">
+        <nav class="menu__nav">
+          <a href="#!" class="menu__nav_item">Закуски</a>
+          <a href="#!" class="menu__nav_item">Салаты</a>
+          <a href="#!" class="menu__nav_item">Супы</a>
+          <a href="#!" class="menu__nav_item">Горячие блюда</a>
+          <a href="#!" class="menu__nav_item">Гарниры</a>
+          <a href="#!" class="menu__nav_item">Десерты</a>
+        </nav>
+      </div>
+    </section>
+    <div class="menu__section">
+      <div class="wrapper">
+        <div class="menu__items">
+          <div class="menu__item">
+            <h2 class="menu__item_title">Закуски</h2>
+            <div class="under__line_xs"></div>
+            <div class="menu__cards row">
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сельдь на бородинском хлебе</p>
+                      <p class="card__consist">С яйцом и огурцом</p>
+                    </div>
+                    <p class="card__price">240 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/seld.png"
+                    alt="Сельдь на бородинском хлебе"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Соленья ассорти</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/solenia.png" alt="Соленья ассорти" />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Грибы маринованные</p>
+                    </div>
+                    <p class="card__price">300 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/griby.png"
+                    alt="Грибы маринованные"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сало домашнее с горчицей</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/salo.png"
+                    alt="Сало домашнее с горчицей"
+                  />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Малосольная семга</p>
+                    </div>
+                    <p class="card__price">390 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/semga.png" alt="Малосольная семга" />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Язык говяжий с хреном</p>
+                    </div>
+                    <p class="card__price">350 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/yazyk.png"
+                    alt="Язык говяжий с хреном"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <h2 class="menu__item_title">Салаты</h2>
+            <div class="under__line_xs"></div>
+            <div class="menu__cards row">
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сельдь на бородинском хлебе</p>
+                      <p class="card__consist">С яйцом и огурцом</p>
+                    </div>
+                    <p class="card__price">240 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/seld.png"
+                    alt="Сельдь на бородинском хлебе"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Соленья ассорти</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/solenia.png" alt="Соленья ассорти" />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Грибы маринованные</p>
+                    </div>
+                    <p class="card__price">300 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/griby.png"
+                    alt="Грибы маринованные"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сало домашнее с горчицей</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/salo.png"
+                    alt="Сало домашнее с горчицей"
+                  />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Малосольная семга</p>
+                    </div>
+                    <p class="card__price">390 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/semga.png" alt="Малосольная семга" />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Язык говяжий с хреном</p>
+                    </div>
+                    <p class="card__price">350 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/yazyk.png"
+                    alt="Язык говяжий с хреном"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <h2 class="menu__item_title">Супы</h2>
+            <div class="under__line_xs"></div>
+            <div class="menu__cards row">
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сельдь на бородинском хлебе</p>
+                      <p class="card__consist">С яйцом и огурцом</p>
+                    </div>
+                    <p class="card__price">240 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/seld.png"
+                    alt="Сельдь на бородинском хлебе"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Соленья ассорти</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/solenia.png" alt="Соленья ассорти" />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Грибы маринованные</p>
+                    </div>
+                    <p class="card__price">300 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/griby.png"
+                    alt="Грибы маринованные"
+                  />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Сало домашнее с горчицей</p>
+                    </div>
+                    <p class="card__price">320 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/salo.png"
+                    alt="Сало домашнее с горчицей"
+                  />
+                </div>
+              </div>
+
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Малосольная семга</p>
+                    </div>
+                    <p class="card__price">390 ₽</p>
+                  </div>
+                  <img src="../img/pushkin/semga.png" alt="Малосольная семга" />
+                </div>
+              </div>
+              <div class="menu__card col-lg-6 col-xs-12">
+                <div class="card__wrapper">
+                  <div class="card__info">
+                    <div class="card__desc">
+                      <p class="card__title">Язык говяжий с хреном</p>
+                    </div>
+                    <p class="card__price">350 ₽</p>
+                  </div>
+                  <img
+                    src="../img/pushkin/yazyk.png"
+                    alt="Язык говяжий с хреном"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__col col-md-4 col-xs-12">
+          <img
+            src="../img/white-logo.svg"
+            alt="white_logo"
+            class="footer__logo"
+          />
+        </div>
+        <div class="line add_margin"></div>
+        <div class="row">
+          <div class="footer__col col-md-4 col-xs-12">
+            <div class="footer__lang">
+              <form action="#!" method="GET" class="footer__lang_form">
+                <select name="language" size="1" class="language">
+                  <option value="russian" class="lang_option">Русский</option>
+                  <option value="english">English</option>
+                </select>
+              </form>
+              <a href="#!" class="uber__hashtag">
+                <span class="hashtag">#</span>
+                <span class="footer__uber">UberEats</span>
+              </a>
+              <div class="social_networks">
+                <a href="#!"
+                  ><img
+                    src="../img/facebook.svg"
+                    alt="Facebook"
+                    class="network"
+                /></a>
+                <a href="#!"
+                  ><img src="../img/twitter.svg" alt="Twitter" class="network"
+                /></a>
+                <a href="#!"
+                  ><img
+                    src="../img/instagram.svg"
+                    alt="Instagram"
+                    class="network"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col col-md-4 col-xs-12">
+            <ul class="footer__info">
+              <li class="footer_link"><a href="#!">Об UberEats</a></li>
+              <li class="footer_link">
+                <a href="#!">Станьте партнёром по доставке</a>
+              </li>
+              <li class="footer_link">
+                <a href="#!">Станьте парнёром-рестораном</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col col-md-4 col-xs-12">
+            <ul class="footer__info">
+              <li class="footer_link"><a href="#!">Все города</a></li>
+              <li class="footer_link"><a href="#!">Цены</a></li>
+              <li class="footer_link"><a href="#!">Помощь</a></li>
+              <li class="footer_link"><a href="#!">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__download">
+          <div class="line"></div>
+          <div class="download">
+            <div class="row">
+              <a href="#!" class="download_link1 col-xs-6"
+                ><img
+                  src="../img/google_play.png"
+                  alt="Google Play"
+                  class="download_pic"
+              /></a>
+              <a href="#!" class="download_link2 col-xs-6"
+                ><img
+                  src="../img/appstore.png"
+                  alt="AppStore"
+                  class="download_pic"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="line"></div>
+          <div class="row footer__agreement">
+            <div class="footer__col col-md-4 col-xs-12">
+              © 2017 Uber Technologies Inc.
+            </div>
+            <div class="footer__col col-md-4 col-xs-12">
+              Обработка персональных данных
+            </div>
+            <div class="footer__col col-md-4 col-xs-12">
+              Пользовательское соглашение
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#anchor" class="btn-up"></a>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
+</html>
