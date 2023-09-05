@@ -1,2 +1,2 @@
 # Ubereats
-My first landing from Stepik course
+My first landing from Stepik course. HTML, CSS
